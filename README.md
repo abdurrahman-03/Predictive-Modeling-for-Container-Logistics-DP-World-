@@ -16,15 +16,15 @@ We address two major challenges:
   - Container Type, ISO Code, Dimensions, Ventilation, Designation (Import, Export, Transshipment)  
 - Features were cleaned, encoded, and grouped by **week** for forecasting tasks.  
 
-[Dataset File](https://github.com/your-username/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/ShippingData1.csv)
+[Dataset File](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/ShippingData1.csv)
 
 ---
 
 ## ⚙️ Methodology  
 
 ### 1. Forecasting Models  
-- **Linear Regression** – baseline model, captured linear trends but struggled with complex patterns. ([See Code](https://github.com/your-username/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/Forecasting_Model.ipynb)) 
-- **Random Forest Regressor** – tuned with GridSearchCV + 5-fold cross-validation. ([See Code](https://github.com/your-username/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/Forecasting_Model.ipynb))  
+- **Linear Regression** – baseline model, captured linear trends but struggled with complex patterns. ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/Forecasting_Model.ipynb)) 
+- **Random Forest Regressor** – tuned with GridSearchCV + 5-fold cross-validation. ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/Forecasting_Model.ipynb))  
   - Achieved **R² ≈ 0.93** on test folds vs. **0.58** for Linear Regression:contentReference[oaicite:0]{index=0}.  
   - Significantly lower MSE, making it the preferred forecasting model.  
 
