@@ -42,11 +42,11 @@ We address two major challenges:
 
 ### 2. Classification Models  
 
-#### Logistic Regression  
+#### Logistic Regression ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/LogisticRegression.ipynb)) 
 - Defined a binary target for container arrivals within specific time windows.  
 - After encoding categorical features, achieved strong performance with ROC curve showing **AUC ≈ 0.94**:.  
 
-#### Random Forest Classifier  
+#### Random Forest Classifier ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/RandomForest.ipynb)) 
 - Classified containers into **Morning, Afternoon, Evening, Night** windows.  
 - Used 5-fold cross-validation, achieving **accuracy ~0.60–0.65**.  
 - Feature importance analysis showed **Day of Week**, **Designation**, and **Ventilation** as key drivers:contentReference[oaicite:2]{index=2}.  
@@ -54,7 +54,7 @@ We address two major challenges:
 **Visuals:**  
 ![Random Forest Feature Importance](file-YJeKAU5d5gjePjXo9QGK6z)
 
-#### K-Nearest Neighbors (KNN)  
+#### K-Nearest Neighbors (KNN) ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/KNN.ipynb)) 
 - Tuned k (1–100), optimal at **k = 8**:contentReference[oaicite:3]{index=3}.  
 - Achieved ~0.57 test accuracy, comparable to Random Forest.  
 
