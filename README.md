@@ -25,18 +25,18 @@ We address two major challenges:
 ### 1. Forecasting Models ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/Forecasting_Model.ipynb))   
 - **Linear Regression** – baseline model, captured linear trends but struggled with complex patterns. 
 - **Random Forest Regressor** – tuned with GridSearchCV + 5-fold cross-validation. 
-  - Achieved **R² ≈ 0.93** on test folds vs. **0.58** for Linear Regression:contentReference[oaicite:0]{index=0}.  
+  - Achieved **R² ≈ 0.93** on test folds vs. **0.58** for Linear Regression.  
   - Significantly lower MSE, making it the preferred forecasting model.  
 
 **Visuals:**  
 - Random Forest predictions vs. actual container counts  
-![Random Forest predictions](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/Forecasting_Model.ipynb#L120-L145)
+![Random Forest predictions](./images/rf_forecast.png)
 
 - Linear Regression predictions vs. actual counts  
-![Linear Regression predictions](file-Hd4eHFtrZWa2vSYz1nm2z5)
+![Linear Regression predictions](./images/lr_forecast.png)
 
 - Combined comparison plot (RF vs. LR)  
-![Combined RF vs LR](file-3Su7NffmMWj7A6JvbzF66A)
+![Combined RF vs LR](./images/combined_forecast.png)
 
 ---
 
@@ -49,21 +49,21 @@ We address two major challenges:
 #### Random Forest Classifier ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/RandomForest.ipynb)) 
 - Classified containers into **Morning, Afternoon, Evening, Night** windows.  
 - Used 5-fold cross-validation, achieving **accuracy ~0.60–0.65**.  
-- Feature importance analysis showed **Day of Week**, **Designation**, and **Ventilation** as key drivers:contentReference[oaicite:2]{index=2}.  
+- Feature importance analysis showed **Day of Week**, **Designation**, and **Ventilation** as key drivers.  
 
 **Visuals:**  
-![Random Forest Feature Importance](file-YJeKAU5d5gjePjXo9QGK6z)
+![Random Forest Feature Importance](./images/rf_feature_importance.png)
 
 #### K-Nearest Neighbors (KNN) ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/KNN.ipynb)) 
-- Tuned k (1–100), optimal at **k = 8**:contentReference[oaicite:3]{index=3}.  
+- Tuned k (1–100), optimal at **k = 8**.  
 - Achieved ~0.57 test accuracy, comparable to Random Forest.  
 
 **Visuals:**  
 - KNN hyperparameter tuning curve  
-![KNN Hyperparameter Tuning](file-JZoRBxCevJgYvRyJhfxhiP)
+![KNN Hyperparameter Tuning](./images/knn_hyperparameter.png)
 
 - KNN confusion matrix  
-![KNN Confusion Matrix](file-KhRUCarcjJhCWq31QazwHK)
+![KNN Confusion Matrix](./images/knn_confusion_matrix.png)
 
 ---
 
