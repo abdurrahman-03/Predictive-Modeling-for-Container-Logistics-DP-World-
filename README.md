@@ -22,9 +22,9 @@ We address two major challenges:
 
 ## ⚙️ Methodology  
 
-### 1. Forecasting Models  
-- **Linear Regression** – baseline model, captured linear trends but struggled with complex patterns. ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/Forecasting_Model.ipynb)) 
-- **Random Forest Regressor** – tuned with GridSearchCV + 5-fold cross-validation. ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/Forecasting_Model.ipynb))  
+### 1. Forecasting Models ([See Code](https://github.com/abdurrahman-03/Predictive-Modeling-for-Container-Logistics-DP-World-/blob/main/Forecasting_Model.ipynb))   
+- **Linear Regression** – baseline model, captured linear trends but struggled with complex patterns. 
+- **Random Forest Regressor** – tuned with GridSearchCV + 5-fold cross-validation. 
   - Achieved **R² ≈ 0.93** on test folds vs. **0.58** for Linear Regression:contentReference[oaicite:0]{index=0}.  
   - Significantly lower MSE, making it the preferred forecasting model.  
 
